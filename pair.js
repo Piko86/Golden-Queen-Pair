@@ -12,7 +12,7 @@ function removeFile(FilePath) {
 }
 
 async function getMongoClient() {
-    const uri = process.env.MONGO_URI || 'mongodb://mongo:nPwqJATaorIUugKMxtLdwNogiVXymhmz@yamanote.proxy.rlwy.net:21462';
+    const uri = process.env.MONGO_URI || 'mongodb+srv://manmithabackup:manmitha@123@cluster0.gb9vdcn.mongodb.net/';
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();
     return client;
